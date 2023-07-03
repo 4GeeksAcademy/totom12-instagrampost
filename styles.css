@@ -1,0 +1,54 @@
+
+body{
+    /* background better than background color, much more flexible */
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+}
+.container{
+    margin: 60px auto;
+    background: whitesmoke;
+    height: 500px;
+    width: 400px;
+    border: 1px solid white;
+}
+.top{
+   /* alighn items in div to help line up items in a div */
+    align-items: center;
+}
+.top,
+.icon{
+    display: flex;
+    margin: 0 5px;
+    width: 375px;
+    /* justify content allows for divs to be arranged ie space-between*/
+    justify-content: space-between;
+}
+.bottom{
+    padding: 7.5px;
+}
+.name{
+   /* flex-direction:how to change column vs row with items in a div  */
+    flex-direction: column;
+    line-height: 1%;
+}
+.left{
+   /* inline-flex aligns div boxes inline */
+    display: inline-flex;
+    /* flex-start/end to show where the div flexes to */
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+.right{
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+/* last two are more for tidying icons  */
+i{
+    margin: 1.5px;
+    font-size: large;
+}
+.fa-html5{
+    font-size: 30px;
+    margin: 0 5px;
+}
